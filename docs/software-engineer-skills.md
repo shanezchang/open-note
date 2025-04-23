@@ -9,3 +9,6 @@
 - [vim](./software-engineer-skills/vim.md)
 - [mysql](./software-engineer-skills/mysql.md)
 - [redis](./software-engineer-skills/redis.md)
+
+- [numpy](./software-engineer-skills/numpy.md)
+- [pandas](./software-engineer-skills/pandas.md)
