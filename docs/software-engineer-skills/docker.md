@@ -6,6 +6,52 @@
 
 ![image-20250422234223263](./assets/image-20250422234223263.png)
 
+### docker command
+
+```bash
+
+docker exec -it $container_id /bin/bash
+
+docker restart $container_id
+
+# docker package
+# docker build -t shane-ubuntu:3.0 -f shane-ubuntu.dockerfile .
+# docker run -dit -v "C:\Users\admin\Documents\Git Projects\github.com\shanezchang\one-note":/root/one-note shane-ubuntu:3.0
+# docker run -dit -v /Users/shanechang/Documents/Code/GitProjects/github.com/shanezchang/one-note:/root/one-note shane-ubuntu:3.0
+# docker exec -it c94c3c45bf27299cb09cfd18aa81aa5bf75ff895127e8ef2023aca4a9a81c232 zsh
+# docker exec -it 85d73b1f8eab64dc08598e6d6f8f33c2661020dfb9cbbdd0d06ca7299e52af15 zsh
+# ctrl + D , exit.
+
+
+docker run -dit debian:latest
+docker run -dit --name debian_demo debian:latest
+docker run -dit --name Name -v LocalPath:ContainerPath debian_demo debian:latest
+
+
+docker run -dit -p 9998:9998 openjdk:latest
+
+
+
+
+
+# mysql
+docker run -dit \
+  -p 3306:3306 \
+  -p 33060:33060 \
+  -e MYSQL_ROOT_PASSWORD=51XWf3FBGs2XVqig \
+  -e MYSQL_USER=reader \
+  -e MYSQL_PASSWORD=MO672LBIl22dW1AM \
+  -v /Users/zhangshuai/Documents/Data/mysql:/var/lib/mysql \
+  mysql:latest
+2LpYrFBjZ6Ln2jwA
+# redis
+docker run -dit \
+  -p 6379:6379 \
+  redis:latest
+```
+
+
+
 ### ubuntu basic demo dockerfile
 
 ```dockerfile
